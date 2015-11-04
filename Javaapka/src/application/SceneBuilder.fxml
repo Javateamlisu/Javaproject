@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="-14.0" layoutY="-106.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="-106.0">
+         <center>
+            <Label alignment="CENTER" prefHeight="239.0" prefWidth="382.0" textFill="#8d0e0e" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="63.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Button defaultButton="true" layoutX="268.0" layoutY="279.0" mnemonicParsing="false" text="Click me!" textFill="#2247ab">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

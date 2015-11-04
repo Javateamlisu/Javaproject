@@ -1,0 +1,40 @@
+package application;
+	
+import java.io.IOException;
+import java.net.URL;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+
+
+public class Main extends Application {
+
+    
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			FXMLLoader fxmlLoader = new FXMLLoader();
+			Pane p = fxmlLoader.load(getClass().getResource("foo.fxml").openStream());
+			LoginController fooController = (LoginController) fxmlLoader.getController();
+			 URL url = getClass().getResource("PersonOverview.fxml");
+			    AnchorPane pane = FXMLLoader.load( url );
+			    Scene scene = new Scene( pane );
+			    
+			    // setting the stage
+			    primaryStage.setScene( scene );
+			    primaryStage.setTitle( "Hello World Demo" );
+			    primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
