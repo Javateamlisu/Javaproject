@@ -1,0 +1,33 @@
+package database;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
+public class Login_PasswordSQL {
+
+
+public static void main(String [] args ){
+
+try{
+	//System.out.println("Connection success");
+	String url="jdbc:mysql://serwer1596524.home.pl:3306/17130806_0000005";
+	String username="17130806_0000005";
+	String password="qwertyu12";
+	Class.forName("com.mysql.jdbc.Driver").newInstance();
+	Connection conn = (Connection) DriverManager.getConnection(url,username,password);
+	String query = "Select * From Login&Password";
+	Statement stmt = (Statement) conn.createStatement();
+	ResultSet rs = stmt.executeQuery(query);
+	while(rs.next())
+	{
+		System.out.println("Login: "+rs.getString("Password"));
+		System.out.println("Password: "+rs.getString("Login"));
+		
+	}
+}
+
+catch(Exception e)
+{
+	System.err.println(e);
+}
+}}
