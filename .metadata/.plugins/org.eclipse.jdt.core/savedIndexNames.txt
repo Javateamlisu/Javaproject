@@ -21,4 +21,3 @@ INDEX VERSION 1.127+C:\Users\Lukas\Desktop\Nowy folder (2)\.metadata\.plugins\or
 4111307789.index
 3620173291.index
 1642629014.index
-1657330681.index
